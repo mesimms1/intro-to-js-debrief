@@ -1,19 +1,20 @@
+//number assignment. This one works. 
 let myNumber = '';
-typeof myNumber;
+let typeNumber = typeof myNumber;
 
-if (typeof myNumber !== number){
-    console.log('This is not a number');
-}else if ((myNumber % 3 === 0) && (myNumber % 5 === 0)){
-    console.log('GenBuzz');
-}else if (myNumber % 3 === 0){
-    console.log('Gen');
-}else if (myNumber % 5 === 0){
-    console.log('Buzz');
-}else{
+if (typeNumber !== 'number'){
+        console.log('This is not a number');
+    } else if ((myNumber % 3 === 0) && (myNumber % 5 === 0)){
+        console.log('GenBuzz');
+    } else if (myNumber % 3 === 0){
+        console.log('Gen');
+    } else if (myNumber % 5 === 0){
+        console.log('Buzz');
+    } else {
     console.log(myNumber);
 }
 
-
+//Shop Item Tasks. This one works. 
 let shopItem = '';
 
 switch(shopItem){
@@ -33,12 +34,15 @@ switch(shopItem){
         console.log('Invalid Item');
         break;
     }
-}
 
-getRandomInt(min, max){
+//Random number between 50 and 100. this one works.
+function getRandomIntInclusive(min, max) {
     min = Math.ceil(50);
     max = Math.floor(100);
-    return Math.floor(Math.random() * (max - min) + min);
-}
+    return Math.floor(Math.random() * (max - min + 1) + min); 
+    }
+
+console.log(getRandomIntInclusive(50, 100));
+
 
 
